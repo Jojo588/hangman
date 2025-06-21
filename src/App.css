@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  margin-top: 20px;
+}
+.hangedMan{
+  text-align: center;
+  margin-left: 40%;
+  position: relative;
+
+}
+.hanger div:nth-child(4){
+  background-color: black;
+  width: 200px;
+  height: 5px;
+}
+.hanger div:nth-child(3){
+  background-color: black;
+  width: 5px;
+  height: 200px;
+  margin-left: 100px;
+}
+.hanger div:nth-child(2){
+  background-color: black;
+  width: 200px;
+  height: 5px;
+  margin-left: 100px;
+}
+.hanger div:nth-child(1){
+  position: absolute;
+  background-color: black;
+  width: 5px;
+  height: 30px;
+  top: 5px;
+  margin-left: 295px;
+}
+#human{
+  position: absolute;
+  top:34px;
+  margin-left: 282px;
+}
+.head{
+  width: 30px;
+  height: 30px;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+.body{
+  width: 5px;
+  height: 45px;
+  background-color: black;
+  margin-left: 12px;
+}
+.leftArm{
+  width: 3px;
+  height: 40px;
+  background-color: black;
+  margin-top: -55px;
+  transform: rotate(120deg);
+  margin-left: -2px;
+}
+.rightArm{
+  width: 3px;
+  height: 40px;
+  background-color: black;
+  margin-top: -42px;
+  transform: rotate(60deg);
+  margin-left: 30px;
+}
+.leftLeg{
+  width: 4px;
+  height: 50px;
+  background-color: black;
+  transform: rotate(30deg);
+  margin-top: 10px;
+  margin-left: -1px;
+}
+.rightLeg{
+  width: 4px;
+  height: 50px;
+  background-color: black;
+  transform: rotate(330deg);
+  margin-top: -50px;
+  margin-left: 25px;
+}
+.guessWord{
+  font-size: 4rem;
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+}
+.keyBoard{
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+  margin: 30px 10px 0 10px;
+}
+.button{
+  cursor: pointer;
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin: 5px;
+  border-radius: 10px;
+  transition: .4s ease-in;
+  &:hover{
+    transform: scale(1.1);
+  }
+
+}
