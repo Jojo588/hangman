@@ -4,12 +4,17 @@
   box-sizing: border-box;
 }
 .container{
-  margin-top: 20px;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .hangedMan{
-  text-align: center;
-  margin-left: 40%;
   position: relative;
+  display: flex;
+  justify-content: center;
 
 }
 .hanger div:nth-child(4){
@@ -40,7 +45,7 @@
 #human{
   position: absolute;
   top:34px;
-  margin-left: 282px;
+  margin-left: 289px;
 }
 .head{
   width: 30px;
